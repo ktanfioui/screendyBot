@@ -3,7 +3,7 @@
 var express = require('express'); // app server
 var bodyParser = require('body-parser'); // parser for post requests
 var Conversation = require('watson-developer-cloud/conversation/v1'); // watson sdk
-var mongoClient = require('mongodb').MongoClient; // Récupération du client mongodb
+//var mongoClient = require('mongodb').MongoClient; // Récupération du client mongodb
 var app = express();
 // Bootstrap application settings
 app.use(express.static('./public')); // load UI from public folder
@@ -61,7 +61,7 @@ var action = "True";
     else{
 
       // Paramètres de connexion
-      var url = 'mongodb://localhost/mydb';
+     // var url = 'mongodb://localhost/mydb';
 
       // Connexion au serveur avec la méthode connect
       /*mongoClient.connect(url, function (err, db) {
